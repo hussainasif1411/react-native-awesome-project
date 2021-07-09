@@ -5,6 +5,8 @@ import Login from '../src/Login';
 import Signup from '../src/Signup';
 import Profile from '../src/Profile';
 
+
+//Creating react navigation for the app
 const Navigator = createStackNavigator(
     {
         Signup: Signup,
@@ -13,6 +15,7 @@ const Navigator = createStackNavigator(
     },
     {
         initialRouteName: 'Signup',
+        headerMode:false,
     }
 );
 
